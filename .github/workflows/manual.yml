@@ -33,6 +33,7 @@ jobs:
     - name: Install jq
       shell: bash
       run: |
+        ls -al
         cd /
         ls -al
     - name: Install jq
