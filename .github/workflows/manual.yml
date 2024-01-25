@@ -33,4 +33,8 @@ jobs:
     - name: Install jq
       shell: bash
       run: |
-        jq --help
+        test_1="Hello World"
+    - name: Install jq
+      shell: bash
+      run: |
+        echo  $test_1
