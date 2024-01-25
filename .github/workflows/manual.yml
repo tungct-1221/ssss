@@ -14,7 +14,6 @@ on:
 jobs:
   tag-and-push:
     runs-on: ubuntu-latest
-    environment: ${{ inputs.environment }}
     steps:
       - name: Checkout
         shell: bash
