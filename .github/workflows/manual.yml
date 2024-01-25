@@ -33,4 +33,4 @@ jobs:
     - name: Install jq
       shell: bash
       run: |
-        echo "TEST= ${{ secrets.TEST }}"
+        echo "TEST= ${{ vars.TEST }}"
