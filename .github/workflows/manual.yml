@@ -33,14 +33,4 @@ jobs:
     - name: Install jq
       shell: bash
       run: |
-        ls -al
-        cd /
-        ls -al
-    - name: Install jq
-      shell: bash
-      run: |
-        ls -al
-    - name: Install jq
-      shell: bash
-      run: |
-        echo "${{ env.ENV }} sdasd"
+        echo "TEST= ${{ secrets.TEST }}"
