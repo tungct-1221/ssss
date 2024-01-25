@@ -7,19 +7,17 @@ name: Manual workflow
 on:
   workflow_dispatch:
     inputs:
-      version:
-        description: 'The version to deploy'
-        type: string
-        required: true
+      environment:
+        type: environment
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   tag-and-push:
     runs-on: ubuntu-latest
-    environment: ${{ inputs.version }}
+    environment: ${{ inputs.environment }}
     steps:
       - name: Checkout
         shell: bash
         run: |
-          echo "version ${{inputs.version}}"
+          echo "version ${{inputs.environment}}"
           echo "env ${{vars.ENV}}"
