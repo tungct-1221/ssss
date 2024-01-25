@@ -43,4 +43,4 @@ jobs:
     - name: Install jq
       shell: bash
       run: |
-        echo $ENV
+        echo "${{ env.ENV }} sdasd"
